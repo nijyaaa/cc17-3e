@@ -1,11 +1,11 @@
-package com.example.elt2
+package com.example.triforce_elt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ELTDashboard : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_eltdashboard)
+        setContentView(R.layout.activity_main)
     }
 }

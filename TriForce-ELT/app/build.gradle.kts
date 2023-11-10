@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.elt2"
-    compileSdk = 34
+    namespace = "com.example.triforce_elt"
+    compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.elt2"
-        minSdk = 24
-        targetSdk = 34
+        applicationId = "com.example.triforce_elt"
+        minSdk = 18
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
