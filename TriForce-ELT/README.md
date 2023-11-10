@@ -12,3 +12,6 @@ Regular Updates
 
 2023/11/9
 - login button now can switch to dashboard
+
+2023/11/10
+- added some contents to coffee shops
