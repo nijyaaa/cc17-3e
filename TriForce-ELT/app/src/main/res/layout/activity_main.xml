@@ -15,4 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="440dp"
+        android:text="Create an Account" />
+
+</RelativeLayout>
+>>>>>>> 3cf7a0a6a6a30190f67209e47be24b10fa0e9a5d
