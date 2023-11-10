@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ELTDashboard">
+    android:padding="16dp"
+    android:background="#F2F2F2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="25sp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/coffee"
+        android:scaleType="fitXY"
+        android:src="@drawable/coffee" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="67dp"
+        android:layout_toLeftOf="@id/imageButton1"
+        android:background="@drawable/resto"
+        android:contentDescription="Button 2"
+        android:scaleType="fitXY"
+        android:src="@drawable/resto" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/imageButton1"
+        android:background="@drawable/touristspot"
+        android:scaleType="fitXY"
+        android:src="@drawable/touristspot" />
+
+</RelativeLayout>

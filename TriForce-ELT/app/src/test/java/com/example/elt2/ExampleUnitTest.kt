@@ -1,4 +1,4 @@
-package com.example.triforce_elt
+package com.example.elt2
 
 import org.junit.Test
 
