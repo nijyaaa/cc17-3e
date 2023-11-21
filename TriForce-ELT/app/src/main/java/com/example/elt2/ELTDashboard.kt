@@ -16,5 +16,17 @@ class ELTDashboard : AppCompatActivity() {
             val Intent = Intent(this, CoffeeShop:: class.java)
             startActivity(Intent)
         }
+
+        val restaurantButton = findViewById<ImageButton>(R.id.imageButton2)
+        restaurantButton.setOnClickListener{
+            val Intent = Intent(this, Restaurants::class.java)
+            startActivity(Intent)
+        }
+
+        val spotsButton = findViewById<ImageButton>(R.id.imageButton3)
+        spotsButton.setOnClickListener{
+            val Intent = Intent(this, TouristSpots::class.java)
+            startActivity(Intent)
+        }
     }
 }

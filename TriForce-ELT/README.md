@@ -15,3 +15,7 @@ Regular Updates
 
 2023/11/10
 - added some contents to coffee shops
+
+2023/11/21
+- fixed the errors
+- added 2 more screens
