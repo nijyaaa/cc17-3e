@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,10 +13,12 @@
         android:layout_marginTop="150dp"
         android:alpha="0.7"
         android:background="@drawable/eltlogo"
-        android:scaleType="centerCrop" />
+        android:contentDescription="@string/elt_logo"
+        android:scaleType="centerCrop"
+        tools:ignore="ImageContrastCheck" />
 
 
-    <EditText
+    <TextView
         android:id="@+id/editTextWelcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +27,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-medium"
-        android:text="WELCOME TO ELT!"
+        android:text="@string/welcome_to_elt"
         android:textAlignment="center"
         android:textColor="#070404" />
 
@@ -41,13 +42,16 @@
         android:layout_marginBottom="16dp"
         android:alpha="5"
         android:autoText="true"
+        android:autofillHints=""
         android:background="#70FFFFFF"
         android:fontFamily="sans-serif-black"
-        android:hint="Username"
+        android:hint="@string/username"
+        android:inputType="text"
         android:padding="10dp"
         android:textColor="#000000"
         android:textColorHint="#322A2A"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="Deprecated,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -58,30 +62,32 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:alpha="600"
+        android:autofillHints=""
         android:background="#70FFFFFF"
         android:fontFamily="sans-serif-black"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="#000000"
         android:textColorHint="#322A2A"
         android:textStyle="bold"
-        android:typeface="normal" />
+        android:typeface="normal"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="156dp"
+        android:layout_marginStart="156dp"
         android:layout_marginTop="387dp"
-        android:text="Login" />
+        android:text="@string/login" />
 
     <Button
         android:id="@+id/buttonCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="119dp"
+        android:layout_marginStart="119dp"
         android:layout_marginTop="440dp"
-        android:text="Create an Account" />
+        android:text="@string/create_an_account" />
 
 </RelativeLayout>

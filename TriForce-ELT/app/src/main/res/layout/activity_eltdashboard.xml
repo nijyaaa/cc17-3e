@@ -9,9 +9,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dashboard"
+        android:text="@string/dashboard"
         android:textSize="25sp"
-        />
+        tools:ignore="RelativeOverlap" />
 
     <ImageButton
         android:id="@+id/imageButton1"
@@ -22,7 +22,8 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/coffee"
         android:scaleType="fitXY"
-        android:src="@drawable/coffee" />
+        android:src="@drawable/coffee"
+        android:contentDescription="@string/coffee_shops" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -30,10 +31,10 @@
         android:layout_height="80dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="67dp"
-        android:layout_toLeftOf="@id/imageButton1"
+        android:layout_marginEnd="67dp"
+        android:layout_toStartOf="@id/imageButton1"
         android:background="@drawable/resto"
-        android:contentDescription="Button 2"
+        android:contentDescription="@string/restaurants"
         android:scaleType="fitXY"
         android:src="@drawable/resto" />
 
@@ -42,11 +43,12 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
         android:layout_marginTop="50dp"
-        android:layout_toRightOf="@id/imageButton1"
+        android:layout_toEndOf="@id/imageButton1"
         android:background="@drawable/touristspot"
         android:scaleType="fitXY"
-        android:src="@drawable/touristspot" />
+        android:src="@drawable/touristspot"
+        android:contentDescription="@string/spots" />
 
 </RelativeLayout>

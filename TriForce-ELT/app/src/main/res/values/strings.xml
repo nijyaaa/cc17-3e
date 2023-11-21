@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ELT2</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="elt_logo">ELT LOGO</string>
+    <string name="welcome_to_elt">WELCOME TO ELT!</string>
+    <string name="coffee_shops">COFFEE SHOPS</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="restaurants">restaurants</string>
+    <string name="spots">spots</string>
 </resources>
