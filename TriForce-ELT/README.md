@@ -19,3 +19,6 @@ Regular Updates
 2023/11/21
 - fixed the errors
 - added 2 more screens
+
+2023/12/21
+- added scrollable list in restaurants, coffee shops and tourist spots
