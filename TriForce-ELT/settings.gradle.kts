@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ELT2"
+rootProject.name = "TriForce - EverythingLaTrinidad"
 include(":app")
- 

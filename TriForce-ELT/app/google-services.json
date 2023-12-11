@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309267805412",
+    "project_id": "triforce-everythinglatrinidad",
+    "storage_bucket": "triforce-everythinglatrinidad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309267805412:android:133190c263ab72b61da8f1",
+        "android_client_info": {
+          "package_name": "com.example.triforce_everythinglatrinidad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADBMMZTjGw4SqQR2xXlZBC9VJmAhmXHtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

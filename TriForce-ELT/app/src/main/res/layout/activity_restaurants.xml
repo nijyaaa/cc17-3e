@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Restaurants">
-
+    tools:context=".RestaurantsActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,22 +27,23 @@
                 app:cardBackgroundColor="@color/white">
 
                 <ImageView
+                    android:id="@+id/dampa_deets"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:layout_margin="5dp"
                     android:background="@color/white"
                     android:elevation="3dp"
-                    android:src="@drawable/dampa"/>
+                    android:src="@drawable/dampa" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingStart="246dp"
+                    android:layout_gravity="center"
+                    android:paddingStart="220dp"
                     android:text="Dampa Express"
+                    android:textColor="@color/black"
                     android:textSize="23sp"
                     android:textStyle="bold"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
 
 
                     />
@@ -58,22 +58,23 @@
                 app:cardBackgroundColor="@color/white">
 
                 <ImageView
+                    android:id="@+id/gardeners_deets"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:layout_margin="5dp"
                     android:background="@color/white"
                     android:elevation="3dp"
-                    android:src="@drawable/gardeners"/>
+                    android:src="@drawable/gardeners" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
                     android:paddingStart="200dp"
-                    android:text="Gardener's Bistro"
+                    android:text="Gardener's Basket"
+                    android:textColor="@color/black"
                     android:textSize="23sp"
                     android:textStyle="bold"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
 
 
                     />
@@ -88,22 +89,23 @@
                 app:cardBackgroundColor="@color/white">
 
                 <ImageView
+                    android:id="@+id/kalei_deets"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:layout_margin="5dp"
                     android:background="@color/white"
                     android:elevation="3dp"
-                    android:src="@drawable/kalei"/>
+                    android:src="@drawable/kalei" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingStart="240dp"
+                    android:layout_gravity="center"
+                    android:paddingStart="230dp"
                     android:text="Kalei's Grill"
+                    android:textColor="@color/black"
                     android:textSize="23sp"
                     android:textStyle="bold"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
 
 
                     />
@@ -118,22 +120,23 @@
                 app:cardBackgroundColor="@color/white">
 
                 <ImageView
+                    android:id="@+id/love_deets"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:layout_margin="5dp"
                     android:background="@color/white"
                     android:elevation="3dp"
-                    android:src="@drawable/love"/>
+                    android:src="@drawable/love" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingStart="240dp"
+                    android:layout_gravity="center"
+                    android:paddingStart="230dp"
                     android:text="Love Mattet"
+                    android:textColor="@color/black"
                     android:textSize="23sp"
                     android:textStyle="bold"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
 
 
                     />
@@ -148,12 +151,13 @@
                 app:cardBackgroundColor="@color/white">
 
                 <ImageView
+                    android:id="@+id/table_deets"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:layout_margin="5dp"
                     android:background="@color/white"
                     android:elevation="3dp"
-                    android:src="@drawable/mark"/>
+                    android:src="@drawable/mark" />
 
                 <TextView
                     android:layout_width="match_parent"

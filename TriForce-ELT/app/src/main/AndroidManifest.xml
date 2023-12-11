@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -10,29 +10,107 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ELT2"
-        tools:targetApi="31" >
+        android:theme="@style/Theme.TriForceEverythingLaTrinidad"
+        tools:targetApi="31">
         <activity
-            android:name=".TouristSpots"
+            android:name=".ChangeIconName"
             android:exported="false" />
         <activity
-            android:name=".Restaurants"
+            android:name=".elegantDetails"
             android:exported="false" />
         <activity
-            android:name=".CoffeeShop"
+            android:name=".wanayDetails"
             android:exported="false" />
         <activity
-            android:name=".ELTDashboard"
+            android:name=".redDetails"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".gardenDetails"
+            android:exported="false" />
+        <activity
+            android:name=".homestayDetails"
+            android:exported="false" />
+        <activity
+            android:name=".yangbewDetails"
+            android:exported="false" />
+        <activity
+            android:name=".colorsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".sunflowerDetails"
+            android:exported="false" />
+        <activity
+            android:name=".kalugongDetails"
+            android:exported="false" />
+        <activity
+            android:name=".strawberryDetails"
+            android:exported="false" />
+        <activity
+            android:name=".tableDetails"
+            android:exported="false" />
+        <activity
+            android:name=".loveDetails"
+            android:exported="false" />
+        <activity
+            android:name=".kaleiDetails"
+            android:exported="false" />
+        <activity
+            android:name=".gardenerDetails"
+            android:exported="false" />
+        <activity
+            android:name=".dampaDetails"
+            android:exported="false" />
+        <activity
+            android:name=".kapeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".fiikaDetails"
+            android:exported="false" />
+        <activity
+            android:name=".kaiDetails"
+            android:exported="false" />
+        <activity
+            android:name=".halfDetails"
+            android:exported="false" />
+        <activity
+            android:name=".sinnerDetails"
+            android:exported="false" />
+        <activity
+            android:name=".SpotsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CafeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_cafe"
+            android:theme="@style/Theme.TriForceEverythingLaTrinidad" />
+        <activity
+            android:name=".ELTdashboard"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -1,93 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E8CECE"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageViewBackground"
-        android:layout_width="700dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="150dp"
-        android:alpha="0.7"
-        android:background="@drawable/eltlogo"
-        android:contentDescription="@string/elt_logo"
-        android:scaleType="centerCrop"
-        tools:ignore="ImageContrastCheck" />
-
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_bg"
+        tools:layout_editor_absoluteY="1dp" />
 
     <TextView
-        android:id="@+id/editTextWelcome"
-        android:layout_width="match_parent"
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/welcome_to_elt"
-        android:textAlignment="center"
-        android:textColor="#070404" />
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik"
+        android:text="Search Your"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Next Destination"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:srcCompat="@drawable/profile" />
 
     <EditText
         android:id="@+id/editTextUsername"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="28dp"
         android:alpha="5"
         android:autoText="true"
         android:autofillHints=""
         android:background="#70FFFFFF"
         android:fontFamily="sans-serif-black"
-        android:hint="@string/username"
+        android:hint="@string/search"
         android:inputType="text"
         android:padding="10dp"
         android:textColor="#000000"
-        android:textColorHint="#322A2A"
+        android:textColorHint="#787070"
         android:textStyle="bold"
-        tools:ignore="Deprecated,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:id="@+id/cafeButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/cafe" />
+
+    <ImageButton
+        android:id="@+id/restoButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="45dp"
+        android:background="#FEFAFD"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/cafeButton"
+        app:layout_constraintStart_toEndOf="@+id/cafeButton"
+        app:layout_constraintTop_toTopOf="@+id/cafeButton"
+        app:srcCompat="@drawable/restaurant" />
+
+    <ImageButton
+        android:id="@+id/spotsButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="45dp"
+        android:background="#FEFAFD"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/restoButton"
+        app:layout_constraintStart_toEndOf="@+id/restoButton"
+        app:layout_constraintTop_toTopOf="@+id/restoButton"
+        app:srcCompat="@drawable/spotss" />
+
+    <ImageButton
+        android:id="@+id/hotelsButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="33dp"
+        android:background="#FEFAFD"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/spotsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spotsButton"
+        app:layout_constraintTop_toTopOf="@+id/spotsButton"
+        app:srcCompat="@drawable/hotel" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="566dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restoButton"
+        app:srcCompat="@drawable/home_bg" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="330dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:alpha="600"
-        android:autofillHints=""
-        android:background="#70FFFFFF"
-        android:fontFamily="sans-serif-black"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:padding="10dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Cafe"
         android:textColor="#000000"
-        android:textColorHint="#322A2A"
-        android:textStyle="bold"
-        android:typeface="normal"
-        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        app:layout_constraintEnd_toEndOf="@+id/cafeButton"
+        app:layout_constraintStart_toStartOf="@+id/cafeButton"
+        app:layout_constraintTop_toBottomOf="@+id/cafeButton" />
 
-    <Button
-        android:id="@+id/buttonLogin"
+    <TextView
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="387dp"
-        android:text="@string/login" />
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Restaurants"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/restoButton"
+        app:layout_constraintStart_toStartOf="@+id/restoButton"
+        app:layout_constraintTop_toBottomOf="@+id/restoButton" />
 
-    <Button
-        android:id="@+id/buttonCreate"
+    <TextView
+        android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="440dp"
-        android:text="@string/create_an_account" />
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Tourist Spots"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/spotsButton"
+        app:layout_constraintStart_toStartOf="@+id/spotsButton"
+        app:layout_constraintTop_toBottomOf="@+id/spotsButton" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Hotels"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/hotelsButton"
+        app:layout_constraintStart_toStartOf="@+id/hotelsButton"
+        app:layout_constraintTop_toBottomOf="@+id/hotelsButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Highlight of the Day"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/cafeButton"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="@+id/cafeButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="337dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/kaideets" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Kai Cafe"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".colorsDetails">
+
+    <ImageView
+        android:id="@+id/dampaDetails"
+        android:layout_width="493dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/valleydeets" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Valley of Colors"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dampaDetails" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="372dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rubik"
+        android:text="Step into the enchanting world of &quot;Valley of Colors,&quot; a house of art where vibrant hues and captivating compositions converge to create a visual symphony. Each canvas tells a story, drawing inspiration from the breathtaking landscapes of valleys and the rich palette of nature. Immerse yourself in the expressive beauty of this collection, where every stroke resonates with the spirit of the spectrum, inviting you to experience the joy and wonder of a world painted in kaleidoscopic brilliance."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

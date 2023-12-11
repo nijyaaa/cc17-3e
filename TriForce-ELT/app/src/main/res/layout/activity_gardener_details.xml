@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gardenerDetails">
+
+    <ImageView
+        android:id="@+id/sinnerDetails"
+        android:layout_width="493dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gardenersdeets" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Gardener's Bistro"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sinnerDetails" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="375dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rubik"
+        android:text=" Nestled in the heart of nature, Gardener's Basket invites you to savor the harmony of garden-fresh flavors in a tranquil oasis. Our restaurant is a verdant haven where the culinary artistry meets the splendor of the outdoors, offering a farm-to-table experience that celebrates the vibrant bounty of the season. Immerse yourself in a symphony of tastes amid lush greenery at Gardener's Basket, where each dish is a testament to the union of wholesome ingredients and the enchanting ambiance of our garden retreat."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
